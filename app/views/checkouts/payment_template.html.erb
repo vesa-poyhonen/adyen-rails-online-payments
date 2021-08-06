@@ -1,15 +1,14 @@
-<title>Integration: <%= @type %></title>
-
-# Hidden divs with data passed from the Rails server
 <div id="clientKey" class="hidden"><%= @client_key %></div>
 <div id="type" class="hidden"><%= @type %></div>
+<div id="country" class="hidden"><%= @country %></div>
+<div id="currency" class="hidden"><%= @currency %></div>
+<div id="amount" class="hidden"><%= @amount %></div>
+<div id="recurring" class="hidden"><%= @recurring %></div>
 
 <div id="payment-page">
   <div class="container">
-    <!--  The checkout integration will be dynamically rendered here -->
-    <!-- e.g., "dropin", "card", "ideal", etc. will be represent the `id` below-->
     <div class="payment-container">
-      <div id=<%= @type %> class="payment"></div>
+      <div id=<%= @type %> class="dropin-gradient"></div>
     </div>
   </div>
 </div>

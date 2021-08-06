@@ -1,5 +1,3 @@
-<title><%= @type %></title>
-
 <div class="status-container">
   <div class="status">
      <% if @type == "success" || @type == "pending" %>
@@ -19,9 +17,8 @@
        The payment was refused. Please try a different payment method or card.
        <% end %>
        <% if @type == "error" %>
-       Error! Please review response in console and refer to <a href="https://docs.adyen.com       development-resources/response-handling">Response handling.</a>
+       Payment failed. Please try again.
        <% end %>
      </p>
-     <a class="button" href="/" to="#/">Return Home</a>
   </div>
 </div>
